@@ -161,6 +161,7 @@ namespace DemoPaint
         string _choice; // Line
         List<IShape> _shapes = new List<IShape>();
         List<IShape> _newShapes=new List<IShape>();
+        List<TextBlock> _texts = new List<TextBlock>();
 
         private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -183,6 +184,7 @@ namespace DemoPaint
                     Canvas.SetTop(newText, position.Y);
 
                     drawingCanvas.Children.Add(newText);
+                    _texts.Add(newText);
                 }
             }
             else if (isInFillMode)
@@ -357,6 +359,10 @@ namespace DemoPaint
                 foreach (var shape in _shapes)
                 {
                     drawingCanvas.Children.Add(shape.Draw());
+                }
+                foreach (var text in _texts)
+                {
+                    drawingCanvas.Children.Add(text);
                 }
 
                 drawingCanvas.Children.Add(preview.Draw());
