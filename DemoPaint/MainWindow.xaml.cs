@@ -24,6 +24,7 @@ namespace DemoPaint
         DoubleCollection dashArray = null;
         private IShape _selectedShape;
         bool isInFillMode = false;
+        bool textMode = false;  
 
         public MainWindow()
         {
@@ -163,12 +164,28 @@ namespace DemoPaint
 
         private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (!isInFillMode)
+            if (textMode)
             {
-                isDrawing = true;
-                _start = e.GetPosition(drawingCanvas);
+                btnAddText.Content = "Add Text";
+                Cursor = Cursors.Arrow;
+                textMode = false;
+
+                string text = textInput.Text;
+                if (!string.IsNullOrEmpty(text))
+                {
+                    TextBlock newText = new TextBlock();
+                    newText.Text = text;
+                    newText.FontSize = 20;
+                    newText.Foreground = Brushes.Black; // Change color as needed
+
+                    Point position = Mouse.GetPosition(drawingCanvas);
+                    Canvas.SetLeft(newText, position.X);
+                    Canvas.SetTop(newText, position.Y);
+
+                    drawingCanvas.Children.Add(newText);
+                }
             }
-            else
+            else if (isInFillMode)
             {
                 _selectedShape = SelectShapeAtPoint(e.GetPosition(drawingCanvas));
 
@@ -191,6 +208,11 @@ namespace DemoPaint
                         drawingCanvas.Children.Add(shape.Draw());
                     }
                 }
+            }
+            else
+            {
+                isDrawing = true;
+                _start = e.GetPosition(drawingCanvas);
             }
         }
 
@@ -353,7 +375,7 @@ namespace DemoPaint
                 shape.DashArray = dashArray;
 
                 _shapes.Add(shape);
-
+                _newShapes.Add(shape);
                 isDrawing = false;
             }
         }
@@ -769,6 +791,22 @@ namespace DemoPaint
             }
 
             return Colors.White; // Màu mặc định nếu không chọn được
+        }
+
+        private void AddText_Click(object sender, RoutedEventArgs e)
+        {
+            if (textMode)
+            {
+                btnAddText.Content = "Add Text";
+                Cursor = Cursors.Arrow;
+                textMode = false;
+            }
+            else
+            {
+                btnAddText.Content = "Cancel";
+                Cursor = Cursors.Pen;
+                textMode = true;
+            }
         }
     }
 }

@@ -74,6 +74,10 @@
                     </ComboBox>
                     <Button x:Name="btnFill" Click="btnFill_Click" Content="Fill" Width="80" Margin="0,5,0,0"/>
                 </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Text">
+                    <TextBox Name="textInput" Width="200" Height="30" Text="Enter Text" />
+                    <Button Content="Add Text" Click="AddText_Click" Name="btnAddText"/>
+                </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
         </Fluent:Ribbon>
         <TabControl BorderThickness="0" SelectedIndex="{Binding ElementName=ribbon, Path=SelectedTabIndex}">
