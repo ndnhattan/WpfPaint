@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "fwfwW8wf34fJXyRyzWBZ3qKYmgn6ChUd+Jek4W0R3BaPnb6n2IDfQs6fUvDCCGBJjAzh37AsUt9x5Qg5reXODg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\DemoPaint\\DemoPaint.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ndnhattan\\.nuget\\packages\\controlzex\\6.0.0\\controlzex.6.0.0.nupkg.sha512",
+    "C:\\Users\\ndnhattan\\.nuget\\packages\\fluent.ribbon\\10.0.4\\fluent.ribbon.10.0.4.nupkg.sha512",
+    "C:\\Users\\ndnhattan\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\ndnhattan\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
