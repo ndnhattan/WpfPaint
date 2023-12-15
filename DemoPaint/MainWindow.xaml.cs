@@ -11,6 +11,7 @@ using Fluent;
 using EllipseLib;
 using RentangleLib;
 using LineLib;
+using System.Windows.Shapes;
 
 namespace DemoPaint
 {
@@ -116,6 +117,9 @@ namespace DemoPaint
                     ability.Name, ability
                 );
 
+                if (ability.Name == "Text")
+                    continue;
+
                 Fluent.Button button = new Fluent.Button()
                 {
                     Tag = ability.Name,
@@ -161,7 +165,6 @@ namespace DemoPaint
         string _choice; // Line
         List<IShape> _shapes = new List<IShape>();
         List<IShape> _newShapes=new List<IShape>();
-        List<TextBlock> _texts = new List<TextBlock>();
 
         private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -174,17 +177,22 @@ namespace DemoPaint
                 string text = textInput.Text;
                 if (!string.IsNullOrEmpty(text))
                 {
-                    TextBlock newText = new TextBlock();
+                    TextShape newText = new TextShape();
                     newText.Text = text;
-                    newText.FontSize = 20;
-                    newText.Foreground = Brushes.Black; // Change color as needed
+                    newText.Color = color;
+                    newText.Size = size;
+
+                    TextBlock textDraw = (TextBlock)newText.Draw();
 
                     Point position = Mouse.GetPosition(drawingCanvas);
-                    Canvas.SetLeft(newText, position.X);
-                    Canvas.SetTop(newText, position.Y);
+                    Canvas.SetLeft(textDraw, position.X);
+                    Canvas.SetTop(textDraw, position.Y);
+                    newText.Top = position.Y;
+                    newText.Left = position.X;
 
-                    drawingCanvas.Children.Add(newText);
-                    _texts.Add(newText);
+                    drawingCanvas.Children.Add(textDraw);
+                    _shapes.Add(newText);
+                    _newShapes.Add(newText);
                 }
             }
             else if (isInFillMode)
@@ -358,11 +366,18 @@ namespace DemoPaint
 
                 foreach (var shape in _shapes)
                 {
-                    drawingCanvas.Children.Add(shape.Draw());
-                }
-                foreach (var text in _texts)
-                {
-                    drawingCanvas.Children.Add(text);
+                    if (shape.Name == "Text")
+                    {
+                        TextShape newText = shape as TextShape; 
+                        TextBlock textDraw = (TextBlock)shape.Draw();
+
+                        Canvas.SetLeft(textDraw, newText.Left);
+                        Canvas.SetTop(textDraw, newText.Top);
+
+                        drawingCanvas.Children.Add(textDraw);
+                    }
+                    else
+                        drawingCanvas.Children.Add(shape.Draw());
                 }
 
                 drawingCanvas.Children.Add(preview.Draw());
@@ -754,7 +769,18 @@ namespace DemoPaint
             _shapes.RemoveAt(_shapes.Count-1);
             for (int i = 0; i < _shapes.Count; i++)
             {
-                drawingCanvas.Children.Add(_shapes[i].Draw());
+                if (_shapes[i].Name == "Text")
+                {
+                    TextShape newText = _shapes[i] as TextShape;
+                    TextBlock textDraw = (TextBlock)_shapes[i].Draw();
+
+                    Canvas.SetLeft(textDraw, newText.Left);
+                    Canvas.SetTop(textDraw, newText.Top);
+
+                    drawingCanvas.Children.Add(textDraw);
+                }
+                else
+                    drawingCanvas.Children.Add(_shapes[i].Draw());
             }
         }
 
@@ -764,7 +790,18 @@ namespace DemoPaint
             _shapes.Add(_newShapes[_shapes.Count]);
             for (int i = 0; i < _shapes.Count; i++)
             {
-                drawingCanvas.Children.Add(_shapes[i].Draw());
+                if (_shapes[i].Name == "Text")
+                {
+                    TextShape newText = _shapes[i] as TextShape;
+                    TextBlock textDraw = (TextBlock)_shapes[i].Draw();
+
+                    Canvas.SetLeft(textDraw, newText.Left);
+                    Canvas.SetTop(textDraw, newText.Top);
+
+                    drawingCanvas.Children.Add(textDraw);
+                }
+                else
+                    drawingCanvas.Children.Add(_shapes[i].Draw());
             }
         }
 
