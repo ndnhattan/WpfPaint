@@ -11,6 +11,14 @@ using Fluent;
 using EllipseLib;
 using RentangleLib;
 using LineLib;
+using System.Windows.Shapes;
+using System.Drawing;
+using Point = System.Windows.Point;
+using Color = System.Windows.Media.Color;
+using Brush = System.Windows.Media.Brush;
+using Brushes = System.Windows.Media.Brushes;
+using Image = System.Windows.Controls.Image;
+using System.Windows.Media.Media3D;
 
 namespace DemoPaint
 {
@@ -24,6 +32,9 @@ namespace DemoPaint
         DoubleCollection dashArray = null;
         private IShape _selectedShape;
         bool isInFillMode = false;
+        bool textMode = false;
+        private bool isDragging = false;
+        private Point startPoint;
 
         public MainWindow()
         {
@@ -160,15 +171,42 @@ namespace DemoPaint
         string _choice; // Line
         List<IShape> _shapes = new List<IShape>();
         List<IShape> _newShapes=new List<IShape>();
-
+        List<TextBlock> _texts = new List<TextBlock>();
+        private UIElement element;
+        double currentAngle = 0;
+        int countFlipVertical = 0;
+        int countFlipHorizontal = 0;
         private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (!isInFillMode)
+            if (textMode)
             {
-                isDrawing = true;
-                _start = e.GetPosition(drawingCanvas);
+                btnAddText.Content = "Add Text";
+                Cursor = Cursors.Arrow;
+                textMode = false;
+
+                string text = textInput.Text;
+                if (!string.IsNullOrEmpty(text))
+                {
+                    TextBlock newText = new TextBlock();
+                    newText.Text = text;
+                    newText.FontSize = 20;
+                    newText.Foreground = Brushes.Black; // Change color as needed
+
+                    Point position = Mouse.GetPosition(drawingCanvas);
+                    Canvas.SetLeft(newText, position.X);
+                    Canvas.SetTop(newText, position.Y);
+
+                    drawingCanvas.Children.Add(newText);
+                    _texts.Add(newText);
+                }
             }
-            else
+            /*else if(isDragging == true)
+            {
+                element = sender as UIElement;
+                startPoint = e.GetPosition(drawingCanvas);
+                element.CaptureMouse();
+            }*/
+            else if (isInFillMode)
             {
                 _selectedShape = SelectShapeAtPoint(e.GetPosition(drawingCanvas));
 
@@ -191,6 +229,11 @@ namespace DemoPaint
                         drawingCanvas.Children.Add(shape.Draw());
                     }
                 }
+            }
+            else
+            {
+                isDrawing = true;
+                _start = e.GetPosition(drawingCanvas);
             }
         }
 
@@ -336,13 +379,34 @@ namespace DemoPaint
                 {
                     drawingCanvas.Children.Add(shape.Draw());
                 }
+                foreach (var text in _texts)
+                {
+                    drawingCanvas.Children.Add(text);
+                }
 
                 drawingCanvas.Children.Add(preview.Draw());
             }
+            /*if (isDragging)
+            {
+                System.Windows.Point currentPosition = e.GetPosition(drawingCanvas);
+
+                double offsetX = currentPosition.X - startPoint.X;
+                double offsetY = currentPosition.Y - startPoint.Y;
+
+                Canvas.SetLeft(element, Canvas.GetLeft(element) + offsetX);
+                Canvas.SetTop(element, Canvas.GetTop(element) + offsetY);
+
+                startPoint = currentPosition;
+            }*/
         }
 
         private void Canvas_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            /*if (isDragging == true)
+            {
+                isDragging = false;
+                element.ReleaseMouseCapture();
+            }*/
             if (isDrawing)
             {
                 IShape shape = _factory.Create(_choice);
@@ -353,7 +417,7 @@ namespace DemoPaint
                 shape.DashArray = dashArray;
 
                 _shapes.Add(shape);
-
+                _newShapes.Add(shape);
                 isDrawing = false;
             }
         }
@@ -698,12 +762,12 @@ namespace DemoPaint
         }
         private void Canvas_LayoutUpdated(object sender, EventArgs e)
         {
-            if(_shapes.Count > 0 && _shapes.Count < _newShapes.Count)
+            if (_shapes.Count > 0 && _shapes.Count < _newShapes.Count)
             {
                 btnUndo.IsEnabled = true;
                 btnRedo.IsEnabled = true;
             }
-            if(_shapes.Count == _newShapes.Count && _shapes.Count!=0)
+            if (_shapes.Count == _newShapes.Count && _shapes.Count != 0)
             {
                 btnUndo.IsEnabled = true;
                 btnRedo.IsEnabled = false;
@@ -769,6 +833,117 @@ namespace DemoPaint
             }
 
             return Colors.White; // Màu mặc định nếu không chọn được
+        }
+
+        private void AddText_Click(object sender, RoutedEventArgs e)
+        {
+            if (textMode)
+            {
+                btnAddText.Content = "Add Text";
+                Cursor = Cursors.Arrow;
+                textMode = false;
+            }
+            else
+            {
+                btnAddText.Content = "Cancel";
+                Cursor = Cursors.Pen;
+                textMode = true;
+            }
+        }
+
+        
+        //Rotate
+        private void RotateCanvas(double angle)
+        {
+            // Tạo góc xoay
+            RotateTransform rotateTransform = new RotateTransform(angle);
+            // Thêm vào canvas
+            drawingCanvas.RenderTransform = rotateTransform;
+
+        }
+        private void rotate90Btn_Click(object sender, RoutedEventArgs e)
+        {
+            RotateCanvas(currentAngle + 90);
+            currentAngle += 90;
+        }
+        private void rotate180Btn_Click(object sender, RoutedEventArgs e)
+        {
+            RotateCanvas(currentAngle + 180);
+            currentAngle += 180;
+        }
+        private void rotate45Btn_Click(object sender, RoutedEventArgs e)
+        {
+            RotateCanvas(currentAngle + 45);
+            currentAngle += 45;
+        }
+
+        //Drag and drop 
+        private void SelectButton_Click(object sender, RoutedEventArgs e)
+        {
+           /* isDragging = true;
+            element = _shapes[0].GetElement();
+            drawingCanvas.Children.Clear();
+            drawingCanvas.Children.Add(element);
+            Canvas.SetLeft(element, 50);
+            Canvas.SetTop(element, 50);*/
+        }
+
+
+        //Flip Canvas
+        
+        private void flipVertical_Click(object sender, RoutedEventArgs e)
+        {
+            ScaleTransform scaleTransform = new ScaleTransform();
+            if (countFlipVertical % 2 == 0 && countFlipHorizontal%2 == 0) {
+                scaleTransform.ScaleY = -1;
+                scaleTransform.ScaleX = 1;
+            }
+            else if (countFlipVertical % 2 == 0 && countFlipHorizontal % 2 != 0)
+            {
+                scaleTransform.ScaleY = -1;
+                scaleTransform.ScaleX = -1;
+            }
+            else if (countFlipVertical % 2 != 0 && countFlipHorizontal % 2 == 0)
+            {
+                scaleTransform.ScaleY = 1;
+                scaleTransform.ScaleX = 1;
+            }
+            else
+            {
+                scaleTransform.ScaleY = 1;
+                scaleTransform.ScaleX = -1;
+            }
+            Console.WriteLine("Giá trị ScaleY hiện tại: " + scaleTransform.ScaleY);
+            drawingCanvas.RenderTransform = scaleTransform;
+            countFlipVertical++;
+        }
+
+        private void flipHorizontalBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ScaleTransform scaleTransform = new ScaleTransform();
+            if (countFlipHorizontal % 2 == 0 && countFlipVertical % 2 == 0)
+            {
+                scaleTransform.ScaleX = -1;
+                scaleTransform.ScaleY = 1;
+            }
+            else if (countFlipHorizontal % 2 == 0 && countFlipVertical % 2 != 0)
+            {
+                scaleTransform.ScaleX = -1;
+                scaleTransform.ScaleY = -1;
+            }
+            else if (countFlipHorizontal % 2 != 0 && countFlipVertical % 2 == 0)
+            {
+                scaleTransform.ScaleX = 1;
+                scaleTransform.ScaleY = 1;
+            }
+            else 
+            {
+                scaleTransform.ScaleX = 1;
+                scaleTransform.ScaleY = -1;
+            }
+
+            drawingCanvas.RenderTransform = scaleTransform;
+            countFlipHorizontal++;
         }
     }
 }

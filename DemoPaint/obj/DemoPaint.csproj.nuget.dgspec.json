@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\DemoPaint\\DemoPaint.csproj": {}
+    "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\DemoPaint\\DemoPaint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\DemoPaint\\DemoPaint.csproj": {
+    "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\DemoPaint\\DemoPaint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\DemoPaint\\DemoPaint.csproj",
+        "projectUniqueName": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\DemoPaint\\DemoPaint.csproj",
         "projectName": "DemoPaint",
-        "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\DemoPaint\\DemoPaint.csproj",
-        "packagesPath": "C:\\Users\\ndnhattan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\DemoPaint\\obj\\",
+        "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\DemoPaint\\DemoPaint.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\DemoPaint\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ndnhattan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,24 +22,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\EllipseLib\\EllipseLib.csproj": {
-                "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\EllipseLib\\EllipseLib.csproj"
+              "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\EllipseLib\\EllipseLib.csproj": {
+                "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\EllipseLib\\EllipseLib.csproj"
               },
-              "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj": {
-                "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj"
+              "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj": {
+                "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj"
               },
-              "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\LineLib\\LineLib.csproj": {
-                "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\LineLib\\LineLib.csproj"
+              "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\LineLib\\LineLib.csproj": {
+                "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\LineLib\\LineLib.csproj"
               },
-              "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\RentangleLib\\RentangleLib.csproj": {
-                "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\RentangleLib\\RentangleLib.csproj"
+              "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\RentangleLib\\RentangleLib.csproj": {
+                "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\RentangleLib\\RentangleLib.csproj"
               }
             }
           }
@@ -86,21 +81,17 @@
         }
       }
     },
-    "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\EllipseLib\\EllipseLib.csproj": {
+    "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\EllipseLib\\EllipseLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\EllipseLib\\EllipseLib.csproj",
+        "projectUniqueName": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\EllipseLib\\EllipseLib.csproj",
         "projectName": "EllipseLib",
-        "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\EllipseLib\\EllipseLib.csproj",
-        "packagesPath": "C:\\Users\\ndnhattan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\EllipseLib\\obj\\",
+        "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\EllipseLib\\EllipseLib.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\EllipseLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ndnhattan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,15 +99,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj": {
-                "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj"
+              "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj": {
+                "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj"
               }
             }
           }
@@ -159,21 +149,17 @@
         }
       }
     },
-    "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj": {
+    "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj",
+        "projectUniqueName": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj",
         "projectName": "IShape",
-        "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj",
-        "packagesPath": "C:\\Users\\ndnhattan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\obj\\",
+        "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ndnhattan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -181,7 +167,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -228,21 +213,17 @@
         }
       }
     },
-    "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\LineLib\\LineLib.csproj": {
+    "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\LineLib\\LineLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\LineLib\\LineLib.csproj",
+        "projectUniqueName": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\LineLib\\LineLib.csproj",
         "projectName": "LineLib",
-        "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\LineLib\\LineLib.csproj",
-        "packagesPath": "C:\\Users\\ndnhattan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\LineLib\\obj\\",
+        "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\LineLib\\LineLib.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\LineLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ndnhattan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -250,15 +231,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj": {
-                "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj"
+              "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj": {
+                "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj"
               }
             }
           }
@@ -301,21 +281,17 @@
         }
       }
     },
-    "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\RentangleLib\\RentangleLib.csproj": {
+    "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\RentangleLib\\RentangleLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\RentangleLib\\RentangleLib.csproj",
+        "projectUniqueName": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\RentangleLib\\RentangleLib.csproj",
         "projectName": "RentangleLib",
-        "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\RentangleLib\\RentangleLib.csproj",
-        "packagesPath": "C:\\Users\\ndnhattan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\RentangleLib\\obj\\",
+        "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\RentangleLib\\RentangleLib.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\RentangleLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ndnhattan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -323,15 +299,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj": {
-                "projectPath": "C:\\Users\\ndnhattan\\Downloads\\WpfPaint\\WpfPaint\\IShape\\IShape.csproj"
+              "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj": {
+                "projectPath": "D:\\NAM3\\WINDOW\\DrawProject\\WpfPaint\\IShape\\IShape.csproj"
               }
             }
           }

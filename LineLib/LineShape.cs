@@ -2,6 +2,7 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 using System.Windows;
 using MyLib;
+using System.Xml.Linq;
 
 namespace LineLib
 {
@@ -12,10 +13,11 @@ namespace LineLib
             return new LineShape();
         }
         public override SolidColorBrush Fill { get; set; } = Brushes.Transparent;
+        public UIElement element {  get; set; }  
 
         public override UIElement Draw()
         {
-            return new Line()
+            element= new Line()
             {
                 X1 = Points[0].X,
                 Y1 = Points[0].Y,
@@ -24,8 +26,10 @@ namespace LineLib
                 Stroke = Color,
                 StrokeThickness = Size,
                 StrokeDashArray = DashArray,
-                Fill = Fill
+                Fill = Fill,
+                RenderTransform = new RotateTransform()
             };
+            return element;
         }
 
         public override string Name => "Line";

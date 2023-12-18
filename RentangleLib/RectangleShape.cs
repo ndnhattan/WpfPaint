@@ -12,6 +12,7 @@ namespace RentangleLib
         public override double Size { get; set; }
         public override DoubleCollection DashArray { get; set; }
         public override SolidColorBrush Fill { get; set; } = Brushes.Transparent;
+        public UIElement element { get; set; }
 
         public override IShape Clone()
         {
@@ -24,14 +25,15 @@ namespace RentangleLib
             double width = Math.Abs(Points[1].X - Points[0].X);
             double height = Math.Abs(Points[1].Y - Points[0].Y);
 
-            var element = new System.Windows.Shapes.Rectangle()
+            element = new System.Windows.Shapes.Rectangle()
             {
                 Width = width,
                 Height = height,
                 Stroke = Color,
                 StrokeThickness = Size,
                 StrokeDashArray = DashArray,
-                Fill = Fill
+                Fill = Fill,
+                RenderTransform = new RotateTransform()
             };
             if (Points[0].X <= Points[1].X && Points[0].Y <= Points[1].Y)
             {

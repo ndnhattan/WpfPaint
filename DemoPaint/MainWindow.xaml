@@ -74,6 +74,26 @@
                     </ComboBox>
                     <Button x:Name="btnFill" Click="btnFill_Click" Content="Fill" Width="80" Margin="0,5,0,0"/>
                 </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Text">
+                    <TextBox Name="textInput" Width="100" Height="30" Text="Enter Text" />
+                    <Button Content="Add Text" Click="AddText_Click" Name="btnAddText"/>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Width="100" Header="Rotate">
+                    <StackPanel>
+                        <Button Width="100" Content="90°" Click="rotate90Btn_Click"></Button>
+                        <Button Width="100" Content="180°" Click="rotate180Btn_Click"></Button>
+                        <Button Width="100" Content="45°" Click="rotate45Btn_Click"></Button>
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Width="100" Header="Flip">
+                    <StackPanel>
+                        <Button Width="100" Content="Vertical" Click="flipVertical_Click"></Button>
+                        <Button Width="100" Content="Horizontal" Click="flipHorizontalBtn_Click"></Button>
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Select">
+                </Fluent:RibbonGroupBox>
+
             </Fluent:RibbonTabItem>
         </Fluent:Ribbon>
         <TabControl BorderThickness="0" SelectedIndex="{Binding ElementName=ribbon, Path=SelectedTabIndex}">
@@ -88,22 +108,21 @@
                 </Style>
             </TabControl.Resources>
             <TabItem>
-            <Grid MouseWheel="Grid_MouseWheel" ClipToBounds="True">
+            <Grid x:Name="mainGrid" MouseWheel="Grid_MouseWheel" ClipToBounds="True">
                  <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                    <StackPanel Name="actionsStackPanel" Background="Red" Orientation="Horizontal">
+                    <StackPanel Name="actionsStackPanel" Background="Transparent" Orientation="Horizontal">
                     </StackPanel>
 
-                <Canvas Name="drawingCanvas" Background="White">
-                    <Canvas.RenderTransform>
-                        <ScaleTransform x:Name="canvasScaleTransform" />
-                    </Canvas.RenderTransform>
-                </Canvas>
-                <Canvas x:Name='Canvas' Grid.Row="1" Background="Transparent" MouseDown="Canvas_MouseDown" MouseMove="Canvas_MouseMove" MouseUp="Canvas_MouseUp" LayoutUpdated="Canvas_LayoutUpdated" >
-
-                </Canvas>
-            </Grid>
+                    <Canvas Name="drawingCanvas" Background="White" RenderTransformOrigin="0.5,0.5"  >
+                        <Canvas.RenderTransform>
+                            <ScaleTransform x:Name="canvasScaleTransform" />
+                        </Canvas.RenderTransform>
+                    </Canvas>
+                    <Canvas x:Name='Canvas' Grid.Row="1" Background="Transparent" MouseDown="Canvas_MouseDown" MouseMove="Canvas_MouseMove" MouseUp="Canvas_MouseUp" LayoutUpdated="Canvas_LayoutUpdated" AllowDrop="True" >
+                    </Canvas>
+                </Grid>
         </TabItem>
      </TabControl>
     </DockPanel>
