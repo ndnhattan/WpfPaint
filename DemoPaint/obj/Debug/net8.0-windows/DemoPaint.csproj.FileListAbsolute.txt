@@ -358,18 +358,6 @@ C:\Users\ndnhattan\Downloads\WpfPaint\WpfPaint\DemoPaint\obj\Debug\net8.0-window
 C:\Users\ndnhattan\Downloads\WpfPaint\WpfPaint\DemoPaint\obj\Debug\net8.0-windows\DemoPaint.pdb
 C:\Users\ndnhattan\Downloads\WpfPaint\WpfPaint\DemoPaint\obj\Debug\net8.0-windows\DemoPaint.genruntimeconfig.cache
 C:\Users\ndnhattan\Downloads\WpfPaint\WpfPaint\DemoPaint\obj\Debug\net8.0-windows\ref\DemoPaint.dll
-D:\NAM3\WINDOW\Temp\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\EllipseLib.dll
-D:\NAM3\WINDOW\Temp\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\LineLib.dll
-D:\NAM3\WINDOW\Temp\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\RentangleLib.dll
-D:\NAM3\WINDOW\Temp\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\EllipseLib.pdb
-D:\NAM3\WINDOW\Temp\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\LineLib.pdb
-D:\NAM3\WINDOW\Temp\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\RentangleLib.pdb
-D:\NAM3\WINDOW\DrawProjectReal\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\EllipseLib.dll
-D:\NAM3\WINDOW\DrawProjectReal\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\LineLib.dll
-D:\NAM3\WINDOW\DrawProjectReal\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\RentangleLib.dll
-D:\NAM3\WINDOW\DrawProjectReal\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\EllipseLib.pdb
-D:\NAM3\WINDOW\DrawProjectReal\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\LineLib.pdb
-D:\NAM3\WINDOW\DrawProjectReal\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\RentangleLib.pdb
 D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\DemoPaint.exe
 D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\DemoPaint.deps.json
 D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Debug\net8.0-windows\DemoPaint.runtimeconfig.json
@@ -405,3 +393,4 @@ D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\obj\Debug\net8.0-windows\refint\De
 D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\obj\Debug\net8.0-windows\DemoPaint.pdb
 D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\obj\Debug\net8.0-windows\DemoPaint.genruntimeconfig.cache
 D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\obj\Debug\net8.0-windows\ref\DemoPaint.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\obj\Debug\net8.0-windows\DemoPaint_Content.g.cs

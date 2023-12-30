@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentangleLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2a95b8091eba4f887e3577d463412e0472d2821")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentangleLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentangleLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

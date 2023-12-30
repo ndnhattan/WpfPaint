@@ -1,0 +1,16 @@
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\bin\Release\net8.0-windows\EllipseLib.deps.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\bin\Release\net8.0-windows\EllipseLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\bin\Release\net8.0-windows\EllipseLib.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\bin\Release\net8.0-windows\IShape.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\bin\Release\net8.0-windows\IShape.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\EllipseLib.csproj.AssemblyReference.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\EllipseLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\EllipseLib.AssemblyInfoInputs.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\EllipseLib.AssemblyInfo.cs
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\EllipseLib.csproj.CoreCompileInputs.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\EllipseLib.sourcelink.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\EllipseLib.csproj.CopyComplete
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\EllipseLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\refint\EllipseLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\EllipseLib.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\EllipseLib\obj\Release\net8.0-windows\ref\EllipseLib.dll

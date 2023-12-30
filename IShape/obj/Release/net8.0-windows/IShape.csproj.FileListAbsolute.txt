@@ -1,0 +1,13 @@
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\bin\Release\net8.0-windows\IShape.deps.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\bin\Release\net8.0-windows\IShape.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\bin\Release\net8.0-windows\IShape.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\IShape.csproj.AssemblyReference.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\IShape.GeneratedMSBuildEditorConfig.editorconfig
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\IShape.AssemblyInfoInputs.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\IShape.AssemblyInfo.cs
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\IShape.csproj.CoreCompileInputs.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\IShape.sourcelink.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\IShape.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\refint\IShape.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\IShape.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\IShape\obj\Release\net8.0-windows\ref\IShape.dll

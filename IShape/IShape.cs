@@ -14,6 +14,7 @@ namespace MyLib
         public List<Point> Points { get; set; } = new List<Point>();
         public abstract SolidColorBrush Fill { get; set; }
 
+
         public abstract UIElement Draw();
         public abstract IShape Clone();
     }

@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DemoPaint"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="MainWindow" Height="450" Width="900" Loaded="Window_Loaded">
 
     <DockPanel LastChildFill="True">
         <Fluent:Ribbon DockPanel.Dock="Top" x:Name="ribbon">
@@ -91,9 +91,6 @@
                         <Button Width="100" Content="Horizontal" Click="flipHorizontalBtn_Click"></Button>
                     </StackPanel>
                 </Fluent:RibbonGroupBox>
-                <Fluent:RibbonGroupBox Header="Select">
-                </Fluent:RibbonGroupBox>
-
             </Fluent:RibbonTabItem>
         </Fluent:Ribbon>
         <TabControl BorderThickness="0" SelectedIndex="{Binding ElementName=ribbon, Path=SelectedTabIndex}">
@@ -108,21 +105,22 @@
                 </Style>
             </TabControl.Resources>
             <TabItem>
-            <Grid x:Name="mainGrid" MouseWheel="Grid_MouseWheel" ClipToBounds="True">
+            <Grid MouseWheel="Grid_MouseWheel" ClipToBounds="True">
                  <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                    <StackPanel Name="actionsStackPanel" Background="Transparent" Orientation="Horizontal">
+                    <StackPanel Name="actionsStackPanel" Background="White" Orientation="Horizontal">
                     </StackPanel>
 
-                    <Canvas Name="drawingCanvas" Background="White" RenderTransformOrigin="0.5,0.5"  >
-                        <Canvas.RenderTransform>
-                            <ScaleTransform x:Name="canvasScaleTransform" />
-                        </Canvas.RenderTransform>
-                    </Canvas>
-                    <Canvas x:Name='Canvas' Grid.Row="1" Background="Transparent" MouseDown="Canvas_MouseDown" MouseMove="Canvas_MouseMove" MouseUp="Canvas_MouseUp" LayoutUpdated="Canvas_LayoutUpdated" AllowDrop="True" >
-                    </Canvas>
-                </Grid>
+                 <Canvas Name="drawingCanvas" Background="White" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <ScaleTransform x:Name="canvasScaleTransform" />
+                    </Canvas.RenderTransform>
+                </Canvas>
+                <Canvas x:Name='Canvas' Grid.Row="1" Background="Transparent" MouseDown="Canvas_MouseDown" MouseMove="Canvas_MouseMove" MouseUp="Canvas_MouseUp" LayoutUpdated="Canvas_LayoutUpdated" >
+
+                </Canvas>
+            </Grid>
         </TabItem>
      </TabControl>
     </DockPanel>

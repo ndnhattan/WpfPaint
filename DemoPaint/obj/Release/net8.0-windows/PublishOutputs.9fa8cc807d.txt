@@ -1,0 +1,16 @@
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\DemoPaint.exe
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\DemoPaint.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\DemoPaint.deps.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\DemoPaint.runtimeconfig.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\DemoPaint.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\ControlzEx.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\Fluent.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\Microsoft.Xaml.Behaviors.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\EllipseLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\IShape.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\LineLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\RentangleLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\EllipseLib.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\IShape.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\LineLib.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\DemoPaint\bin\Release\net8.0-windows\publish\RentangleLib.pdb

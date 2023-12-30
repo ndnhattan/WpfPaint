@@ -1,0 +1,16 @@
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\bin\Release\net8.0-windows\LineLib.deps.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\bin\Release\net8.0-windows\LineLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\bin\Release\net8.0-windows\LineLib.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\bin\Release\net8.0-windows\IShape.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\bin\Release\net8.0-windows\IShape.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\LineLib.csproj.AssemblyReference.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\LineLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\LineLib.AssemblyInfoInputs.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\LineLib.AssemblyInfo.cs
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\LineLib.csproj.CoreCompileInputs.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\LineLib.sourcelink.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\LineLib.csproj.CopyComplete
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\LineLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\refint\LineLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\LineLib.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\LineLib\obj\Release\net8.0-windows\ref\LineLib.dll

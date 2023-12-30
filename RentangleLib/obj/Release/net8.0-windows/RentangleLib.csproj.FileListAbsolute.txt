@@ -1,0 +1,16 @@
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\bin\Release\net8.0-windows\RentangleLib.deps.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\bin\Release\net8.0-windows\RentangleLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\bin\Release\net8.0-windows\RentangleLib.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\bin\Release\net8.0-windows\IShape.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\bin\Release\net8.0-windows\IShape.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\RentangleLib.csproj.AssemblyReference.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\RentangleLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\RentangleLib.AssemblyInfoInputs.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\RentangleLib.AssemblyInfo.cs
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\RentangleLib.csproj.CoreCompileInputs.cache
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\RentangleLib.sourcelink.json
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\RentangleLib.csproj.CopyComplete
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\RentangleLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\refint\RentangleLib.dll
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\RentangleLib.pdb
+D:\NAM3\WINDOW\DrawProject\WpfPaint\RentangleLib\obj\Release\net8.0-windows\ref\RentangleLib.dll
